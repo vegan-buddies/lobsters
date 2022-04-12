@@ -66,7 +66,7 @@
           <% else %>
             <%= link_to "Inbox", inbox_path, class: 'inbox corner' %>
           <% end %>
-
+          <%= link_to_different_page 'Invite', signup_invite_path %>
           <%= link_to_different_page 'Threads', threads_path %>
           <%= link_to_different_page 'Saved', saved_path %>
           <%= link_to_different_page raw("#{@user.username}&nbsp;<span class='karma'>(#{@user.karma})</span>"), settings_path %>
