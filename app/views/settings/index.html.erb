@@ -47,6 +47,12 @@
     </div>
 
     <div class="boxline">
+        <%= f.label :matrix_nicks, "Matrix nicks (space separated):", :class => "required" %>
+        <%= f.text_field :matrix_nicks, :size => 40 %>
+    </div>
+
+
+    <div class="boxline">
       <%= f.label :about, "About:", :class => "required" %>
       <%= f.text_area :about, :size => "100x5", :style => "width: 600px;" %>
     </div>

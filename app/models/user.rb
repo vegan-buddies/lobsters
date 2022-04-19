@@ -170,6 +170,7 @@ class User < ApplicationRecord
       :created_at,
       :is_admin,
       :is_moderator,
+      :matrix_nicks,
     ]
 
     if !self.is_admin?
